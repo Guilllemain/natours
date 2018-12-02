@@ -1,0 +1,24 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "node-sass scss/main.scss css/style.css -w",
+    "start": "npx live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Guilllemain/natours.git"
+  },
+  "author": "Yann",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Guilllemain/natours/issues"
+  },
+  "homepage": "https://github.com/Guilllemain/natours#readme",
+  "devDependencies": {
+    "live-server": "^1.2.1",
+    "node-sass": "^4.10.0"
+  }
+}

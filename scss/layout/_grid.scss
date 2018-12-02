@@ -1,0 +1,14 @@
+.row {
+	display: flex;
+	max-width: $grid-width;
+	margin: 0 auto;
+
+	.col {
+		flex: 1;
+		background-color: grey;
+		
+		&:not(:last-child) {
+			margin-right: $gutter-vertical;
+		}
+	}
+}
