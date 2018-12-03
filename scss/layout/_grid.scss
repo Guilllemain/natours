@@ -4,8 +4,7 @@
 	margin: 0 auto;
 
 	.col {
-		flex: 1;
-		background-color: grey;
+		width: 50%;
 		
 		&:not(:last-child) {
 			margin-right: $gutter-vertical;
