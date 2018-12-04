@@ -11,6 +11,14 @@
 		}
 	}
 
+	.col-33 {
+		width: 33.33%;
+		
+		&:not(:last-child) {
+			margin-right: $gutter-vertical;
+		}
+	}
+
 	.col-25 {
 		width: 25%;
 		
