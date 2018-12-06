@@ -3,6 +3,10 @@
 	max-width: $grid-width;
 	margin: 0 auto;
 
+	&:not(:last-child) {
+        margin-bottom: $gutter-horizontal;
+    }
+
 	.col-50 {
 		width: 50%;
 		
