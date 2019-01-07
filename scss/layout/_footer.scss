@@ -8,10 +8,33 @@
 	    padding: 8rem 0;
 	}
 
+	&__col {
+		&--right {
+			width: 62%;
+
+			@include screen(small) {
+				text-align: center;
+			    width: 100%;
+			    margin-bottom: 4rem;
+			}
+		}
+		&--left {
+			width: 38%;
+
+			@include screen(small) {
+			    width: 100%;
+			}
+		}
+	}
+
 
 	&__logo-box {
 		text-align: center;
 		margin-bottom: 8rem;
+
+		@include screen(small) {
+		    margin-bottom: 6rem;
+		}
 	}
 
 	&__logo {

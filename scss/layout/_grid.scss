@@ -5,7 +5,8 @@
 
 	@include screen(small) {
         flex-direction: column;
-        max-width: 70rem;
+        max-width: 50rem;
+        padding: 0 3rem;
     }
 
 	&:not(:last-child) {
