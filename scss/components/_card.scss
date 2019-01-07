@@ -142,3 +142,54 @@
 		}
 	}
 }
+
+
+
+@include screen(small) {
+	.card {
+		height: auto;
+		border-radius: .3rem;
+		box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, .15);
+		background-color: white;
+
+		&__side {
+			position: relative;
+			border-radius: 0;
+			box-shadow: none;
+
+
+			&--back {
+				transform: rotateY(0);
+				-webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+				clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+			}
+		}
+
+		&:hover &__side--front {
+			transform: rotateY(0);
+		}
+
+		&:hover &__side--back {
+			transform: rotateY(0);
+		}
+
+		&__call-to-action {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-around;
+			height: 100%;
+			padding: 4rem 3rem;
+
+			&--text {
+				&-span {
+					font-size: 1.4rem;
+				}
+
+				&-price {
+					font-size: 5rem;
+				}
+			}
+		}
+	}
+}

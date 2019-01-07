@@ -58,14 +58,29 @@
 	&__right {
 		margin-left: -1rem;
 		padding: 3rem 5rem 3rem 0;
+
+		@include screen(small) {
+			margin-left: 3rem;
+			padding: 0 4rem 2rem 0;
+		}
 	}
 
 	&__left {
 		display: flex;
-		flex-direction: column;		
+		flex-direction: column;
+
+		@include screen(small) {
+			flex-direction: row;
+			align-items: flex-end;
+			width: 50%;
+		}	
 
 		& img {
 			width: 100%;
+
+			@include screen(small) {
+				height: 100%;
+			}	
 		}
 	}
 
